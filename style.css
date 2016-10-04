@@ -1,6 +1,40 @@
+body{
+ height: 80vh;
+ width: 90vw;
+ border: 3px solid yellow;
+}
+
 .player2 {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   background-color: black;
   position: relative;
+}
+
+.playarea {
+  height: 100px;
+  width: 100px;
+  border: 2px solid green;
+}
+
+.cannon {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: red;
+}
+
+.fire {
+  height: 20px;
+  width: 5px;
+  margin: 0 auto ;
+  background-color: purple;
+  position: absolute;
+}
+
+.bullet {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    position: absolute;
 }
