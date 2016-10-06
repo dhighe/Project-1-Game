@@ -1,23 +1,47 @@
 body{
- height: 90vh;
- width: 90vw;
- border: 3px solid yellow;
+ height: 600px;
+ width: 900px;
+ border: 3px solid pink;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
 }
 
-.player2 {
+.player {
+  margin-top: 278px;
+  margin-left: -300px;
+  box-sizing: border-box;
   height: 50px;
   width: 50px;
-  background-color: black;
+  background-color: purple;
+  position: absolute;
+  top: 0;
+}
+
+.block {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
   position: relative;
-  margin: 0 auto ;
+  box-sizing: border-box;
+  left: 0;
 }
 
-.space {
-  height: 300px;
-  width: 1px;
+.triangle{
+  width: 50;
+  height: 50;
+  border: 2px solid black;
+  border-width: 0 25px 50px 25px;
+  border-color: transparent transparent #007bff transparent;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
 }
 
-.cannon {
+
+/*.cannon {
   height: 50px;
   width: 50px;
   margin: 0 auto;
@@ -27,7 +51,7 @@ body{
 .fire {
   height: 20px;
   width: 5px;
-  background-color: purple;
+  background-color: yellow;
   position: absolute;
 }
 
@@ -51,3 +75,11 @@ body{
   background-color: red;
   position: absolute;
 }
+
+.fire5 {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+}*/
