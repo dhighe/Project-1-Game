@@ -7,30 +7,30 @@ console.log('Everything is fine.')
 //   var triangleObj = ;
 // }
 
-function collisionCircle(){
-  var playerObj = {radius: 25, x: 5, y: 5};
-  var  blockObj = {radius: 25, x: 10, y: 5};
+// function collisionCircle(){
+//   var playerObj = {radius: 25, x: 5, y: 5};
+//   var  blockObj = {radius: 25, x: 10, y: 5};
 
-  var dx = playerObj.x - blockObj.x;
-  var dy = playerObj.y - blockObj.y;
-  var distance = Math.sqrt(dx * dx + dy * dy);
+//   var dx = playerObj.x - blockObj.x;
+//   var dy = playerObj.y - blockObj.y;
+//   var distance = Math.sqrt(dx * dx + dy * dy);
 
-  if (distance < playerObj.radius + blockObj.radius) {
-    console.log('Hit!');
-  }
-}
+//   if (distance < playerObj.radius + blockObj.radius) {
+//     console.log('Hit!');
+//   }
+// }
 
-function collisionSquare(){
-  var rect1 = {x: 5, y: 5, width: 50, height: 50}
-  var rect2 = {x: 20, y: 10, width: 10, height: 10}
+// function collisionSquare(){
+//   var rect1 = {x: 5, y: 5, width: 50, height: 50}
+//   var rect2 = {x: 20, y: 10, width: 10, height: 10}
 
-  if (rect1.x < rect2.x + rect2.width &&
-     rect1.x + rect1.width > rect2.x &&
-     rect1.y < rect2.y + rect2.height &&
-     rect1.height + rect1.y > rect2.y) {
-      console.log('Hit!');
-  }
-}
+//   if (rect1.x < rect2.x + rect2.width &&
+//      rect1.x + rect1.width > rect2.x &&
+//      rect1.y < rect2.y + rect2.height &&
+//      rect1.height + rect1.y > rect2.y) {
+//       console.log('Hit!');
+//   }
+// }
 
 function hitbox(){
   var playerLeft = $('.player').position().left;
@@ -69,13 +69,13 @@ var inAir = false
 $(document).ready(function jumping(){
   $('body').keydown(function(event) {
     if (event.keyCode === 32 && inAir === false) {
-      $('.player').animate({top: '+=100'},{duration: 450});
+      $('.player').animate({top: '-=100'},{duration: 450});
       }
     inAir = true;
   });
   $('body').keyup(function(event) {
     if(event.keyCode === 32 && inAir === true) {
-      $('.player').animate({top: '-=100'},{duration: 450});
+      $('.player').animate({top: '+=100'},{duration: 450});
     }
     inAir = false;
   });
@@ -110,4 +110,30 @@ function platform2() {
 // setInterval(hitbox, 1000);
 
 
+// function component(width, height, x, y) {
+//     this.type = type;
+//     this.score = 0;
+//     this.width = width;
+//     this.height = height;
+//     this.speedX = 0;
+//     this.speedY = 0;
+//     this.x = x;
+//     this.y = y;
+//     }
+//     this.crashWith = function(otherobj) {
+//         var myleft = this.x;
+//         var myright = this.x + (this.width);
+//         var mytop = this.y;
+//         var mybottom = this.y + (this.height);
+//         var otherleft = otherobj.x;
+//         var otherright = otherobj.x + (otherobj.width);
+//         var othertop = otherobj.y;
+//         var otherbottom = otherobj.y + (otherobj.height);
+//         var crash = true;
+//         if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+//             crash = false;
+//         }
+//         return crash;
+//     }
+// }
 

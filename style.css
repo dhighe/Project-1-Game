@@ -1,28 +1,32 @@
 body{
-  height: 99vh;
- width: 10000px;
- margin: 0 auto;
-
+  width: 15000px;
+  border-right: 5px solid lightgray;
+  border-left: 5px solid lightgray;
 }
 
 .play-area{
   position: absolute;
-  width: 10000px;
+  width: 15000px;
   top: 0;
   height: 60%;
   display: flex;
-  flex-flow: row-reverse wrap;
+  justify-content: row-reverse;
   align-items: flex-start;
+  border-right: 20px solid lightgray;
+  border-left: 20px solid lightgray;
 }
 
 .menu-area{
   position: absolute;
-  width: 10000px;
+  width: 15000px;
   bottom: 0;
   height: 40%;
   background-color: lightgray;
+  border-right: 5px solid lightgray;
+  border-left: 5px solid lightgray;
 }
 .player {
+  margin-top: 416px;
   margin-left: 200px;
   box-sizing: border-box;
   height: 50px;
@@ -35,6 +39,8 @@ body{
 }
 
 .block {
+  margin-top: 416px;
+  margin-left: 800px;
   height: 50px;
   width: 50px;
   border: 2px solid #007bff;
@@ -45,7 +51,8 @@ body{
 }
 
 .triangle{
-  margin: ;
+  margin-top: 416px;
+  margin-left: 1200px;
   width: 50px;
   height: 50px;
   border: 2px solid black;
@@ -58,11 +65,15 @@ body{
 }
 
 .double {
+  margin-top: 416px;
+  margin-left: 800px;
   display: flex;
   justify-content: row;
 }
 
 .triple {
+   margin-top: 416px;
+  margin-left: 800px;
   display: flex;
   justify-content: row;
 }
