@@ -1,7 +1,10 @@
+html, body {
+   overflow-y: hidden;
+}
+
 body{
   width: 15000px;
-  border-right: 5px solid lightgray;
-  border-left: 5px solid lightgray;
+  background-color: lightgray;
 }
 
 .play-area{
@@ -10,10 +13,9 @@ body{
   top: 0;
   height: 60%;
   display: flex;
+  background-color: white;
   justify-content: row-reverse;
   align-items: flex-start;
-  border-right: 20px solid lightgray;
-  border-left: 20px solid lightgray;
 }
 
 .menu-area{
@@ -22,8 +24,7 @@ body{
   bottom: 0;
   height: 40%;
   background-color: lightgray;
-  border-right: 5px solid lightgray;
-  border-left: 5px solid lightgray;
+
 }
 .player {
   margin-top: 416px;
@@ -34,7 +35,7 @@ body{
   border-radius: 50%;
   background-color: purple;
   position: fixed;
-  top: 0;
+  top: 50;
   left: 0;
 }
 
@@ -44,37 +45,69 @@ body{
   height: 50px;
   width: 50px;
   border: 2px solid #007bff;
+  background-color: #007bff;
   position: absolute;
   box-sizing: border-box;
-  top: 0;
+  top: 50;
   left: 0;
 }
 
 .triangle{
   margin-top: 416px;
   margin-left: 1200px;
-  width: 50px;
-  height: 50px;
-  border: 2px solid black;
-  border-width: 0 25px 50px 25px;
-  border-color: transparent transparent #007bff transparent;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #007bff;
   box-sizing: border-box;
   position: absolute;
-  top: 0;
+  top: 50;
+  left: 0;
+}
+
+#second{
+  margin-top: 416px;
+  margin-left: 1600px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #007bff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50;
+  left: 0;
+}
+
+#third{
+  margin-top: 416px;
+  margin-left: 2000px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #007bff;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50;
   left: 0;
 }
 
 .double {
   margin-top: 416px;
-  margin-left: 800px;
+  margin-left: 1800px;
   display: flex;
   justify-content: row;
+  position: absolute;
 }
 
 .triple {
    margin-top: 416px;
-  margin-left: 800px;
+  margin-left: 2800px;
   display: flex;
   justify-content: row;
+  position: absolute;
 }
 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
