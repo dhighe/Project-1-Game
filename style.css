@@ -3,13 +3,12 @@ html, body {
 }
 
 body{
-  width: 15000px;
-  background-color: lightgray;
+  width: 5000px;
 }
 
 .play-area{
   position: absolute;
-  width: 15000px;
+  width: 5000px;
   top: 0;
   height: 60%;
   display: flex;
@@ -20,10 +19,12 @@ body{
 
 .menu-area{
   position: absolute;
-  width: 15000px;
+  margin-left: -10px;
+  width: 5000px;
   bottom: 0;
   height: 40%;
   background-color: lightgray;
+  border-right: 10px solid lightgray;
 
 }
 .player {
@@ -33,7 +34,7 @@ body{
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: purple;
+  background-color: #6495ED;
   position: fixed;
   top: 50;
   left: 0;
@@ -41,68 +42,93 @@ body{
 
 .block {
   margin-top: 416px;
-  margin-left: 800px;
+  margin-left: 500px;
   height: 50px;
   width: 50px;
-  border: 2px solid #007bff;
-  background-color: #007bff;
+  border: 2px solid black;
   position: absolute;
   box-sizing: border-box;
   top: 50;
   left: 0;
 }
 
-.triangle{
+.triangle {
   margin-top: 416px;
-  margin-left: 1200px;
+  margin-left: 800px;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  border-bottom: 50px solid #007bff;
+  border-bottom: 50px solid #FF7F50;
   box-sizing: border-box;
   position: absolute;
   top: 50;
   left: 0;
 }
 
-#second{
+.platform {
   margin-top: 416px;
-  margin-left: 1600px;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 50px solid #007bff;
-  box-sizing: border-box;
+  margin-left: 500px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
   position: absolute;
+  box-sizing: border-box;
   top: 50;
   left: 0;
+  margin-top: 416px;
+  margin-left: 2600px;
 }
 
-#third{
+#second {
+  margin-top: 416px;
+  margin-left: 1400px;
+}
+
+#third {
   margin-top: 416px;
   margin-left: 2000px;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 50px solid #007bff;
-  box-sizing: border-box;
-  position: absolute;
-  top: 50;
-  left: 0;
 }
 
-.double {
+#fourth {
   margin-top: 416px;
-  margin-left: 1800px;
-  display: flex;
-  justify-content: row;
-  position: absolute;
+  margin-left: 2550px;
 }
 
-.triple {
-   margin-top: 416px;
-  margin-left: 2800px;
-  display: flex;
-  justify-content: row;
-  position: absolute;
+#fifth {
+  margin-top: 366px;
+  margin-left: 2600px;
 }
+
+#raised {
+  margin-top: 416px;
+  margin-left: 2600px;
+}
+
+#sixth {
+  margin-top: 416px;
+  margin-left: 2650px;
+}
+
+#stack{
+  margin-left: 3800px;
+  margin-top: 360px;
+}
+
+#stack2{
+  margin-left: 3800px;
+  margin-top: 260px;
+}
+
+#stack3{
+  margin-left: 3800px;
+  margin-top: 310px;
+}
+
+#seventh {
+  margin-top: 416px;
+  margin-left: 4000px;
+}
+
+
 
 @media only screen
   and (min-device-width: 768px)
