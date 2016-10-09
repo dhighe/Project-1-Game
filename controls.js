@@ -1,32 +1,61 @@
 //Please let everything be fine
 console.log('Everything is fine.')
 
-// It is not best practice to have global varibles
+// It is not best practice to have global variables
 var inAir = false
 
 //Collision detection between player and block
+//Attempted to set the player sides as a global variable, but ran into errors
+// so each function will have it defined as needed.
 function hitBox(){
   var playerLeft = $('.player').offset().left;
   var playerRight = $('.player').offset().left + $('.player').width();
   var playerTop = $('.player').offset().top;
   var playerBottom = $('.player').offset().top + $('.player').height();
-  var blockLeft = $('.block').offset().left;
-  var blockRight = $('.block').offset().left + $('.block').width();
-  var blockTop = $('.block').offset().top;
-  //Dawa suggested increasing the "hitbox" for landing on top of the block
-  var blockTopS = $('.block').offset().top + 10;
-  var blockTopN = $('.block').offset().top - 10;
-  var blockBottom = $('.block').offset().top + $('.block').height();
+  $('.block').each(function(){
+    var blockLeft = $(this).offset().left;
+    var blockRight = $(this).offset().left + $(this).width();
+    var blockTop = $(this).offset().top;
+    //Dawa suggested increasing the "hitbox" for landing on top of the block
+    var blockTopS = $(this).offset().top + 10;
+    var blockTopN = $(this).offset().top - 10;
+    var blockBottom = $(this).offset().top + $(this).height();
 
-//Killzone are on blocks side but safe on top
-  if (playerRight > blockLeft && playerLeft < blockRight && playerBottom > blockTop){
-    console.log('Hit!');
-  } else if (playerRight > blockLeft && playerLeft < blockRight && blockTopS > playerBottom && playerBottom > blockTopN){
-    console.log('Land!');
-//Allows the player to stop on the block and the new ground is at same level as the block
-    $('.player').stop();
-    $(".player").css('top', "-50px");
-  }
+  //Killzone are on blocks side but safe on top
+    if (playerRight > blockLeft && playerLeft < blockRight && playerBottom > blockTop){
+      console.log('Hit!');
+    } else if (playerRight > blockLeft && playerLeft < blockRight && blockTopS > playerBottom && playerBottom > blockTopN){
+      console.log('Land!');
+  //Allows the player to stop on the block and the new ground is at same level as the block
+      $('.player').stop();
+      $(".player").css('top', "-50px");
+    }
+  })
+}
+
+function raisedBox(){
+  var playerLeft = $('.player').offset().left;
+  var playerRight = $('.player').offset().left + $('.player').width();
+  var playerTop = $('.player').offset().top;
+  var playerBottom = $('.player').offset().top + $('.player').height();
+  $('.rblock').each(function(){
+    var rblockLeft = $(this).offset().left;
+    var rblockRight = $(this).offset().left + $(this).width();
+    var rblockTop = $(this).offset().top;
+    var rblockTopS = $(this).offset().top + 10;
+    var rblockTopN = $(this).offset().top - 10;
+    var rblockBottom = $(this).offset().top + $(this).height();
+
+  //Killzone are on blocks side but safe on top
+    if (playerRight > rblockLeft && playerLeft < rblockRight && playerBottom > rblockTop){
+      console.log('Hit!');
+    } else if (playerRight > rblockLeft && playerLeft < rblockRight && rblockTopS > playerBottom && playerBottom > rblockTopN){
+      console.log('Land!');
+  //Allows the player to stop on the block and the new ground is at same level as the block
+      $('.player').stop();
+      $(".player").css('top', "-100px");
+    }
+  })
 }
 
 //There are a difference between walls/platforms, and blocks. Blocks are meant to be jumped off
@@ -67,6 +96,18 @@ function hitHazzard(){
   });
 }
 
+function fallbox(){
+  var playerLeft = $('.player').offset().left;
+  var playerBottom = $('.player').offset().top + $('.player').height();
+  $('.fblock').each(function(){
+  var fblockRight = $(this).offset().left + $(this).width();
+  var fblockbottom = $(this).offset().top - 25;
+  if (fblockRight < playerLeft && playerBottom < fblockbottom ){
+    $('.player').animate({top: '0'},{duration: 450});
+    }
+  })
+}
+
 //Function for allowing the player to jump
 $(document).ready(function jumping(){
   $('body').keydown(function(event) {
@@ -97,6 +138,29 @@ function movingBlock() {
   });
 }
 
+function fallingBlock() {
+  $(".fblock").each(function() {
+  var movright =  $(".fblock").position().left;
+  var boundaryLeft = -10000;
+    $('.fblock').animate({left: '-=10000'},{duration: 22000});
+    hitbox();
+    if (movright < boundaryLeft){
+      $(this).remove();
+    }
+  });
+}
+
+function higherBlock() {
+  $(".rblock").each(function() {
+  var movright =  $(".rblock").position().left;
+  var boundaryLeft = -10000;
+    $('.rblock').animate({left: '-=10000'},{duration: 22000});
+    hitbox();
+    if (movright < boundaryLeft){
+      $(this).remove();
+    }
+  });
+}
 
 function platform() {
   $(".platform").each(function() {
@@ -122,14 +186,22 @@ function dodgeThis() {
   });
 }
 
-setInterval(movingBlock, 1000);
-setInterval(platform, 1000);
-setInterval(dodgeThis, 1000);
+function winner() {
+  alert('Congratulations!');
+}
 
-setInterval(hitBox, 1);
+// setInterval(movingBlock, 1000);
+// setInterval(platform, 1000);
+// setInterval(dodgeThis, 1000);
+// setInterval(fallingBlock, 1000);
+// setInterval(higherBlock, 1000);
+
+// setInterval(hitBox, 1);
+// setInterval(raisedBox, 1);
+// setInterval(fallbox, 100);
 // setInterval(hitHazzard, 100);
 // setInterval(hitWall, 100);
-
+setTimeout(winner, 18000);
 
 
 

@@ -53,8 +53,6 @@ body{
 }
 
 .platform {
-  margin-top: 416px;
-  margin-left: 500px;
   height: 50px;
   width: 50px;
   border: 2px solid black;
@@ -67,8 +65,6 @@ body{
 }
 
 .block {
-  margin-top: 416px;
-  margin-left: 500px;
   height: 50px;
   width: 50px;
   border: 2px solid black;
@@ -76,6 +72,41 @@ body{
   box-sizing: border-box;
   top: 50;
   left: 0;
+}
+
+.rblock {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50;
+  left: 0;
+}
+
+.fblock {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50;
+  left: 0;
+}
+
+#test {
+  margin-top: 416px;
+  margin-left: 400px;
+}
+
+#test2 {
+  margin-top: 366px;
+  margin-left: 300px;
+}
+
+#test3 {
+  margin-top: 366px;
+  margin-left: 450px;
 }
 
 #second {
@@ -125,11 +156,11 @@ body{
 
 #seventh {
   margin-top: 416px;
-  margin-left: 3400px;
+  margin-left: 3500px;
 }
 
 #seventhadd{
-  margin-left: 3450px;
+  margin-left: 3550px;
   margin-top: 416px;
 }
 
@@ -150,7 +181,7 @@ body{
 
 #eighth {
   margin-top: 416px;
-  margin-left: 4250px;
+  margin-left: 4350px;
 }
 
 #ninth {
@@ -160,158 +191,310 @@ body{
 
 #tenth {
   margin-top: 416px;
-  margin-left: 4350px;
+  margin-left: 4400px;
+}
+
+#tenthadd {
+  margin-top: 416px;
+  margin-left: 4450px;
+}
+
+
+#eleventhadd {
+  margin-top: 416px;
+  margin-left: 5300px;
+}
+#eleventhadd1 {
+  margin-top: 416px;
+  margin-left: 5350px;
+}
+#eleventhadd2 {
+  margin-top: 416px;
+  margin-left: 5400px;
 }
 
 #floor {
   margin-top: 416px;
-  margin-left: 4900px;
+  margin-left: 5450px;
 }
 
 #floor2 {
   margin-top: 416px;
-  margin-left: 4950px;
+  margin-left: 5500px;
 }
 
 #flooradd {
   margin-top: 416px;
-  margin-left: 5000px;
+  margin-left: 5550px;
 }
 
 #floor2add {
   margin-top: 416px;
-  margin-left: 5050px;
+  margin-left: 5600px;
 }
 
 #stack7 {
   margin-top: 416px;
-  margin-left: 5100px;
+  margin-left: 5650px;
 }
 
 #stack8 {
   margin-top: 416px;
-  margin-left: 5150px;
+  margin-left: 5700px;
 }
 
 #stack9 {
   margin-top: 416px;
-  margin-left: 5200px;
-}
-
-#eleventh {
-  margin-top: 366px;
-  margin-left: 5200px;
-}
-
-#floor3 {
-  margin-top: 366px;
-  margin-left: 5350px;
-}
-
-#floor4 {
-  margin-top: 366px;
-  margin-left: 5400px;
-}
-
-#stack10 {
-  margin-top: 366px;
-  margin-left: 5450px;
-}
-
-#stack11 {
-  margin-top: 366px;
-  margin-left: 5500px;
-}
-
-#stack12 {
-  margin-top: 416px;
-  margin-left: 5650px;
-}
-
-#twelfth {
-  margin-top: 366px;
-  margin-left: 5650px;
-}
-
-#stack13{
-  margin-top: 366px;
-  margin-left: 5700px;
-}
-#stack14 {
-  margin-top: 366px;
   margin-left: 5750px;
 }
 
-#stack15 {
-  margin-top: 366px;
+#eleventh {
+  margin-top: 416px;
   margin-left: 5800px;
-}
-
-#stack16 {
-  margin-top: 366px;
-  margin-left: 5850px;
-}
-
-#thirteen {
-  margin-top: 316px;
-  margin-left: 5850px;
-}
-
-
-#stack17 {
-  margin-top: 366px;
-  margin-left: 5550px;
-}
-
-#stack18 {
-  margin-top: 366px;
-  margin-left: 5600px;
 }
 
 #stack19 {
   margin-top: 416px;
-  margin-left: 5000px;
+  margin-left: 5850px;
 }
 
 #stack20 {
   margin-top: 416px;
-  margin-left: 5050px;
+  margin-left: 5900px;
 }
 
-/*#floor5 {
+#stack10 {
   margin-top: 416px;
-  margin-left: 4350px;
+  margin-left: 5950px;
+}
+
+#stack11 {
+  margin-top: 416px;
+  margin-left: 6000px;
+}
+
+#stack12 {
+  margin-top: 416px;
+  margin-left: 6050px;
+}
+
+#twelfth {
+  margin-top: 366px;
+  margin-left: 6100px;
+}
+
+#stack13{
+  margin-top: 416px;
+  margin-left: 6150px;
+}
+#stack14 {
+  margin-top: 416px;
+  margin-left: 6200px;
+}
+
+#stack15 {
+  margin-top: 416px;
+  margin-left: 6250px;
+}
+
+#stack16 {
+  margin-top: 416px;
+  margin-left: 6300px;
+}
+
+
+#stack17 {
+  margin-top: 416px;
+  margin-left: 6100px;
+}
+
+#stack18 {
+  margin-top: 416px;
+  margin-left: 5800px;
+}
+
+
+
+#floor3 {
+  margin-top: 416px;
+  margin-left: 7200px;
+}
+
+#floor4 {
+  margin-top: 416px;
+  margin-left: 7250px;
+}
+
+#floor5 {
+  margin-top: 416px;
+  margin-left: 7300px;
 }
 
 #floor6 {
   margin-top: 416px;
-  margin-left: 4350px;
+  margin-left: 7350px;
+}
+
+#stack21{
+  margin-top: 416px;
+  margin-left: 7400px;
+}
+
+#stack22{
+  margin-top: 416px;
+  margin-left: 7450px;
+}
+
+#stack21add{
+  margin-top: 416px;
+  margin-left: 7500px;
+}
+
+#stack22add{
+  margin-top: 416px;
+  margin-left: 7550px;
+}
+
+#stack23add{
+  margin-top: 416px;
+  margin-left: 7600px;
+}
+
+
+#fourteen{
+  margin-top: 366px;
+  margin-left: 7500px;
+}
+
+#fifteen{
+  margin-top: 366px;
+  margin-left: 7550px;
+}
+
+#fifteenadd{
+  margin-top: 366px;
+  margin-left: 7600px;
 }
 
 #floor7 {
-  margin-top: 416px;
-  margin-left: 4350px;
+  margin-top: 366px;
+  margin-left: 7650px;
 }
 
 #floor8 {
-  margin-top: 416px;
-  margin-left: 4350px;
+  margin-top: 366px;
+  margin-left: 7700px;
 }
-*/
 
+#floor9 {
+  margin-top: 366px;
+  margin-left: 7750px;
+}
 
+#floor10 {
+  margin-top: 366px;
+  margin-left: 7800px;
+}
 
+#stack23{
+  margin-top: 366px;
+  margin-left: 7850px;
+}
 
+#stack24{
+  margin-top: 366px;
+  margin-left: 7900px;
+}
 
+#stack25{
+  margin-top: 366px;
+  margin-left: 7950px;
+}
 
+#stack26{
+  margin-top: 366px;
+  margin-left: 8000px;
+}
 
+#stack27{
+  margin-top: 366px;
+  margin-left: 8050px;
+}
 
+#stack28{
+  margin-top: 366px;
+  margin-left: 8100px;
+}
 
+#stack29{
+  margin-top: 366px;
+  margin-left: 8150px;
+}
 
+#stack30{
+  margin-top: 366px;
+  margin-left: 8200px;
+}
 
+#stack31{
+  margin-top: 366px;
+  margin-left: 8250px;
+}
 
+#stack32{
+  margin-top: 366px;
+  margin-left: 8300px;
+}
 
+#stack33{
+  margin-top: 366px;
+  margin-left: 8350px;
+}
 
+#stack34{
+  margin-top: 366px;
+  margin-left: 8400px;
+}
+
+#sixteen{
+  margin-top: 316px;
+  margin-left: 8150px;
+}
+
+#seventeen{
+  margin-top: 316px;
+  margin-left: 8200px;
+}
+
+#stack35{
+  margin-top: 366px;
+  margin-left: 8450px;
+}
+
+#stack36{
+  margin-top: 366px;
+  margin-left: 8500px;
+}
+
+#stack37{
+  margin-top: 366px;
+  margin-left: 8550px;
+}
+
+#stack38{
+  margin-top: 366px;
+  margin-left: 8600px;
+}
+
+#stack39{
+  margin-top: 366px;
+  margin-left: 8650px;
+}
+
+#stack40{
+  margin-top: 366px;
+  margin-left: 8700px;
+}
 
 
 
