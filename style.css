@@ -3,12 +3,12 @@ html, body {
 }
 
 body{
-  width: 5000px;
+  width: 10000px;
 }
 
 .play-area{
   position: absolute;
-  width: 5000px;
+  width: 10000px;
   top: 0;
   height: 60%;
   display: flex;
@@ -20,7 +20,7 @@ body{
 .menu-area{
   position: absolute;
   margin-left: -10px;
-  width: 5000px;
+  width: 10000px;
   bottom: 0;
   height: 40%;
   background-color: lightgray;
@@ -36,18 +36,6 @@ body{
   border-radius: 50%;
   background-color: #6495ED;
   position: fixed;
-  top: 50;
-  left: 0;
-}
-
-.block {
-  margin-top: 416px;
-  margin-left: 500px;
-  height: 50px;
-  width: 50px;
-  border: 2px solid black;
-  position: absolute;
-  box-sizing: border-box;
   top: 50;
   left: 0;
 }
@@ -76,6 +64,18 @@ body{
   left: 0;
   margin-top: 416px;
   margin-left: 2600px;
+}
+
+.block {
+  margin-top: 416px;
+  margin-left: 500px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  position: absolute;
+  box-sizing: border-box;
+  top: 50;
+  left: 0;
 }
 
 #second {
@@ -109,24 +109,221 @@ body{
 }
 
 #stack{
-  margin-left: 3800px;
+  margin-left: 3200px;
   margin-top: 360px;
 }
 
 #stack2{
-  margin-left: 3800px;
+  margin-left: 3200px;
   margin-top: 260px;
 }
 
 #stack3{
-  margin-left: 3800px;
+  margin-left: 3200px;
   margin-top: 310px;
 }
 
 #seventh {
   margin-top: 416px;
-  margin-left: 4000px;
+  margin-left: 3400px;
 }
+
+#seventhadd{
+  margin-left: 3450px;
+  margin-top: 416px;
+}
+
+#stack4{
+  margin-left: 3900px;
+  margin-top: 360px;
+}
+
+#stack5{
+  margin-left: 3900px;
+  margin-top: 260px;
+}
+
+#stack6{
+  margin-left: 3900px;
+  margin-top: 310px;
+}
+
+#eighth {
+  margin-top: 416px;
+  margin-left: 4250px;
+}
+
+#ninth {
+  margin-top: 416px;
+  margin-left: 4300px;
+}
+
+#tenth {
+  margin-top: 416px;
+  margin-left: 4350px;
+}
+
+#floor {
+  margin-top: 416px;
+  margin-left: 4900px;
+}
+
+#floor2 {
+  margin-top: 416px;
+  margin-left: 4950px;
+}
+
+#flooradd {
+  margin-top: 416px;
+  margin-left: 5000px;
+}
+
+#floor2add {
+  margin-top: 416px;
+  margin-left: 5050px;
+}
+
+#stack7 {
+  margin-top: 416px;
+  margin-left: 5100px;
+}
+
+#stack8 {
+  margin-top: 416px;
+  margin-left: 5150px;
+}
+
+#stack9 {
+  margin-top: 416px;
+  margin-left: 5200px;
+}
+
+#eleventh {
+  margin-top: 366px;
+  margin-left: 5200px;
+}
+
+#floor3 {
+  margin-top: 366px;
+  margin-left: 5350px;
+}
+
+#floor4 {
+  margin-top: 366px;
+  margin-left: 5400px;
+}
+
+#stack10 {
+  margin-top: 366px;
+  margin-left: 5450px;
+}
+
+#stack11 {
+  margin-top: 366px;
+  margin-left: 5500px;
+}
+
+#stack12 {
+  margin-top: 416px;
+  margin-left: 5650px;
+}
+
+#twelfth {
+  margin-top: 366px;
+  margin-left: 5650px;
+}
+
+#stack13{
+  margin-top: 366px;
+  margin-left: 5700px;
+}
+#stack14 {
+  margin-top: 366px;
+  margin-left: 5750px;
+}
+
+#stack15 {
+  margin-top: 366px;
+  margin-left: 5800px;
+}
+
+#stack16 {
+  margin-top: 366px;
+  margin-left: 5850px;
+}
+
+#thirteen {
+  margin-top: 316px;
+  margin-left: 5850px;
+}
+
+
+#stack17 {
+  margin-top: 366px;
+  margin-left: 5550px;
+}
+
+#stack18 {
+  margin-top: 366px;
+  margin-left: 5600px;
+}
+
+#stack19 {
+  margin-top: 416px;
+  margin-left: 5000px;
+}
+
+#stack20 {
+  margin-top: 416px;
+  margin-left: 5050px;
+}
+
+/*#floor5 {
+  margin-top: 416px;
+  margin-left: 4350px;
+}
+
+#floor6 {
+  margin-top: 416px;
+  margin-left: 4350px;
+}
+
+#floor7 {
+  margin-top: 416px;
+  margin-left: 4350px;
+}
+
+#floor8 {
+  margin-top: 416px;
+  margin-left: 4350px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

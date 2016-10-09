@@ -43,7 +43,7 @@ function hitWall(){
 
     if (playerRight > platLeft  && playerLeft < platRight && playerBottom > platTop){
       console.log('Hit!');
-      location.reload(true);
+      // location.reload(true);
     }
   });
 }
@@ -62,7 +62,7 @@ function hitHazzard(){
 
     if (playerRight > triangleLeft  && playerLeft < triangleRight && playerBottom > triangleTop){
       console.log('Hit!');
-      location.reload(true);
+      // location.reload(true);
     }
   });
 }
@@ -88,7 +88,7 @@ $(document).ready(function jumping(){
 function movingBlock() {
   $(".block").each(function() {
   var movright =  $(".block").position().left;
-  var boundaryLeft = -15000;
+  var boundaryLeft = -10000;
     $('.block').animate({left: '-=10000'},{duration: 22000});
     hitbox();
     if (movright < boundaryLeft){
@@ -101,7 +101,7 @@ function movingBlock() {
 function platform() {
   $(".platform").each(function() {
     var movright =  $(".platform").position().left;
-    var boundaryLeft = -15000;
+    var boundaryLeft = -1000;
     $('.platform').animate({left: '-=10000'},{duration: 22000});
     hitbox();
     if (movright < boundaryLeft){
@@ -113,7 +113,7 @@ function platform() {
 function dodgeThis() {
    $(".triangle").each(function() {
     var movright =  $(".triangle").position().left;
-    var boundaryLeft = -15000;
+    var boundaryLeft = -1000;
     $('.triangle').animate({left: '-=10000'},{duration: 22000});
     hitbox();
     if (movright < boundaryLeft){
@@ -122,11 +122,11 @@ function dodgeThis() {
   });
 }
 
-// setInterval(movingBlock, 1000);
-// setInterval(platform, 1000);
-// setInterval(dodgeThis, 1000);
+setInterval(movingBlock, 1000);
+setInterval(platform, 1000);
+setInterval(dodgeThis, 1000);
 
-// setInterval(hitBox, 1);
+setInterval(hitBox, 1);
 // setInterval(hitHazzard, 100);
 // setInterval(hitWall, 100);
 
