@@ -20,7 +20,6 @@ function hitBox(){
     var blockTopS = $(this).offset().top + 10;
     var blockTopN = $(this).offset().top - 10;
     var blockBottom = $(this).offset().top + $(this).height();
-
   //Killzone are on blocks side but safe on top
     if (playerRight > blockLeft && playerLeft < blockRight && playerBottom > blockTop){
       console.log('Hit!');
@@ -38,14 +37,13 @@ function raisedBox(){
   var playerRight = $('.player').offset().left + $('.player').width();
   var playerTop = $('.player').offset().top;
   var playerBottom = $('.player').offset().top + $('.player').height();
-  $('.rblock').each(function(){
+  $('.raised-block').each(function(){
     var rblockLeft = $(this).offset().left;
     var rblockRight = $(this).offset().left + $(this).width();
     var rblockTop = $(this).offset().top;
     var rblockTopS = $(this).offset().top + 10;
     var rblockTopN = $(this).offset().top - 10;
     var rblockBottom = $(this).offset().top + $(this).height();
-
   //Killzone are on blocks side but safe on top
     if (playerRight > rblockLeft && playerLeft < rblockRight && playerBottom > rblockTop){
       console.log('Hit!');
@@ -99,7 +97,7 @@ function hitHazzard(){
 function fallbox(){
   var playerLeft = $('.player').offset().left;
   var playerBottom = $('.player').offset().top + $('.player').height();
-  $('.fblock').each(function(){
+  $('.falling-block').each(function(){
   var fblockRight = $(this).offset().left + $(this).width();
   var fblockbottom = $(this).offset().top - 25;
   if (fblockRight < playerLeft && playerBottom < fblockbottom ){
@@ -139,10 +137,10 @@ function movingBlock() {
 }
 
 function fallingBlock() {
-  $(".fblock").each(function() {
-  var movright =  $(".fblock").position().left;
+  $(".falling-block").each(function() {
+  var movright =  $(".falling-block").position().left;
   var boundaryLeft = -10000;
-    $('.fblock').animate({left: '-=10000'},{duration: 22000});
+    $('.falling-block').animate({left: '-=10000'},{duration: 22000});
     hitbox();
     if (movright < boundaryLeft){
       $(this).remove();
@@ -151,10 +149,10 @@ function fallingBlock() {
 }
 
 function higherBlock() {
-  $(".rblock").each(function() {
-  var movright =  $(".rblock").position().left;
+  $(".raised-block").each(function() {
+  var movright =  $(".raised-block").position().left;
   var boundaryLeft = -10000;
-    $('.rblock').animate({left: '-=10000'},{duration: 22000});
+    $('.raised-block').animate({left: '-=10000'},{duration: 22000});
     hitbox();
     if (movright < boundaryLeft){
       $(this).remove();
@@ -201,7 +199,7 @@ function winner() {
 // setInterval(fallbox, 100);
 // setInterval(hitHazzard, 100);
 // setInterval(hitWall, 100);
-setTimeout(winner, 18000);
+// setTimeout(winner, 18000);
 
 
 

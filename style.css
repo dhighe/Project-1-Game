@@ -6,509 +6,390 @@ body{
   width: 10000px;
 }
 
-.play-area{
+.block {
+  border: 2px solid black;
+  box-sizing: border-box;
+  height: 50px;
   position: absolute;
-  width: 10000px;
-  top: 0;
-  height: 60%;
-  display: flex;
-  background-color: white;
-  justify-content: row-reverse;
-  align-items: flex-start;
+  width: 50px;
+}
+
+.falling-block {
+  border: 2px solid black;
+  box-sizing: border-box;
+  height: 50px;
+  position: absolute;
+  width: 50px;
 }
 
 .menu-area{
-  position: absolute;
-  margin-left: -10px;
-  width: 10000px;
-  bottom: 0;
-  height: 40%;
   background-color: lightgray;
   border-right: 10px solid lightgray;
-
+  bottom: 0;
+  height: 40%;
+  margin-left: -10px;
+  position: absolute;
+  width: 10000px;
 }
-.player {
-  margin-top: 416px;
-  margin-left: 200px;
+
+.raised-block {
+  border: 2px solid black;
   box-sizing: border-box;
   height: 50px;
+  position: absolute;
   width: 50px;
-  border-radius: 50%;
+}
+
+.platform {
+  border: 2px solid black;
+  box-sizing: border-box;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.play-area{
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  height: 60%;
+  justify-content: row-reverse;
+  position: absolute;
+  top: 0;
+  width: 10000px;
+}
+
+.player {
   background-color: #6495ED;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 50px;
+  margin: 416px 0 0 200px;
   position: fixed;
-  top: 50;
-  left: 0;
+  width: 50px;
 }
 
 .triangle {
-  margin-top: 416px;
-  margin-left: 800px;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-bottom: 50px solid #FF7F50;
   box-sizing: border-box;
-  position: absolute;
-  top: 50;
-  left: 0;
-}
-
-.platform {
   height: 50px;
-  width: 50px;
-  border: 2px solid black;
   position: absolute;
-  box-sizing: border-box;
-  top: 50;
-  left: 0;
-  margin-top: 416px;
-  margin-left: 2600px;
-}
-
-.block {
-  height: 50px;
   width: 50px;
-  border: 2px solid black;
-  position: absolute;
-  box-sizing: border-box;
-  top: 50;
-  left: 0;
 }
 
-.rblock {
-  height: 50px;
-  width: 50px;
-  border: 2px solid black;
-  position: absolute;
-  box-sizing: border-box;
-  top: 50;
-  left: 0;
+#stage1 {
+  margin: 416px 0 0 800px;
 }
 
-.fblock {
-  height: 50px;
-  width: 50px;
-  border: 2px solid black;
-  position: absolute;
-  box-sizing: border-box;
-  top: 50;
-  left: 0;
+#stage2 {
+  margin: 416px 0 0 1400px;
 }
 
-#test {
-  margin-top: 416px;
-  margin-left: 400px;
+#stage3 {
+  margin: 416px 0 0 2000px;
 }
 
-#test2 {
-  margin-top: 366px;
-  margin-left: 300px;
+#stage4 {
+  margin: 416px 0 0 2550px;
 }
 
-#test3 {
-  margin-top: 366px;
-  margin-left: 450px;
+#stage5 {
+  margin: 416px 0 0 2600px;
 }
 
-#second {
-  margin-top: 416px;
-  margin-left: 1400px;
+#stage6 {
+  margin: 366px 0 0 2600px;
 }
 
-#third {
-  margin-top: 416px;
-  margin-left: 2000px;
+#stage7 {
+  margin: 416px 0 0 2650px;
 }
 
-#fourth {
-  margin-top: 416px;
-  margin-left: 2550px;
+#stage8 {
+  margin: 360px 0 0 3200px;
 }
 
-#fifth {
-  margin-top: 366px;
-  margin-left: 2600px;
+#stage9 {
+  margin: 310px 0 0 3200px;
 }
 
-#raised {
-  margin-top: 416px;
-  margin-left: 2600px;
+#stage10 {
+  margin: 260px 0 0 3200px;
 }
 
-#sixth {
-  margin-top: 416px;
-  margin-left: 2650px;
+#stage11 {
+  margin: 416px 0 0 3500px;
 }
 
-#stack{
-  margin-left: 3200px;
-  margin-top: 360px;
+#stage12 {
+  margin: 416px 0 0 3550px;
 }
 
-#stack2{
-  margin-left: 3200px;
-  margin-top: 260px;
+#stage13 {
+  margin: 360px 0 0 3900px;
 }
 
-#stack3{
-  margin-left: 3200px;
-  margin-top: 310px;
+#stage14 {
+  margin: 310px 0 0 3900px;
 }
 
-#seventh {
-  margin-top: 416px;
-  margin-left: 3500px;
+#stage15 {
+  margin: 260px 0 0 3900px;
 }
 
-#seventhadd{
-  margin-left: 3550px;
-  margin-top: 416px;
+#stage16 {
+  margin: 416px 0 0 4350px;
 }
 
-#stack4{
-  margin-left: 3900px;
-  margin-top: 360px;
+#stage17 {
+  margin: 416px 0 0 4300px;
 }
 
-#stack5{
-  margin-left: 3900px;
-  margin-top: 260px;
+#stage18 {
+  margin: 416px 0 0 4400px;
 }
 
-#stack6{
-  margin-left: 3900px;
-  margin-top: 310px;
+#stage19 {
+  margin: 416px 0 0 4450px;
 }
 
-#eighth {
-  margin-top: 416px;
-  margin-left: 4350px;
+#stage20 {
+  margin: 416px 0 0 5300px;
 }
 
-#ninth {
-  margin-top: 416px;
-  margin-left: 4300px;
+#stage21 {
+  margin: 416px 0 0 5350px;
 }
 
-#tenth {
-  margin-top: 416px;
-  margin-left: 4400px;
+#stage22 {
+  margin: 416px 0 0 5400px;
 }
 
-#tenthadd {
-  margin-top: 416px;
-  margin-left: 4450px;
+#stage23 {
+  margin: 416px 0 0 5450px;
 }
 
-
-#eleventhadd {
-  margin-top: 416px;
-  margin-left: 5300px;
-}
-#eleventhadd1 {
-  margin-top: 416px;
-  margin-left: 5350px;
-}
-#eleventhadd2 {
-  margin-top: 416px;
-  margin-left: 5400px;
+#stage24 {
+  margin: 416px 0 0 5500px;
 }
 
-#floor {
-  margin-top: 416px;
-  margin-left: 5450px;
+#stage25 {
+  margin: 416px 0 0 5550px;
 }
 
-#floor2 {
-  margin-top: 416px;
-  margin-left: 5500px;
+#stage26 {
+  margin: 416px 0 0 5600px;
 }
 
-#flooradd {
-  margin-top: 416px;
-  margin-left: 5550px;
+#stage27 {
+  margin: 416px 0 0 5650px;
 }
 
-#floor2add {
-  margin-top: 416px;
-  margin-left: 5600px;
+#stage28 {
+  margin: 416px 0 0 5700px;
 }
 
-#stack7 {
-  margin-top: 416px;
-  margin-left: 5650px;
+#stage29 {
+  margin: 416px 0 0 5750px;
 }
 
-#stack8 {
-  margin-top: 416px;
-  margin-left: 5700px;
+#stage30 {
+  margin: 416px 0 0 5800px;
 }
 
-#stack9 {
-  margin-top: 416px;
-  margin-left: 5750px;
+#stage31 {
+  margin: 416px 0 0 5850px;
 }
 
-#eleventh {
-  margin-top: 416px;
-  margin-left: 5800px;
+#stage32 {
+  margin: 416px 0 0 5900px;
 }
 
-#stack19 {
-  margin-top: 416px;
-  margin-left: 5850px;
+#stage33 {
+  margin: 416px 0 0 5950px;
 }
 
-#stack20 {
-  margin-top: 416px;
-  margin-left: 5900px;
+#stage34 {
+  margin: 366px 0 0 6100px;
 }
 
-#stack10 {
-  margin-top: 416px;
-  margin-left: 5950px;
+#stage35 {
+  margin: 416px 0 0 6050px;
 }
 
-#stack11 {
-  margin-top: 416px;
-  margin-left: 6000px;
+#stage36 {
+  margin: 416px 0 0 6000px;
 }
 
-#stack12 {
-  margin-top: 416px;
-  margin-left: 6050px;
+#stage37 {
+  margin: 416px 0 0 6150px;
 }
 
-#twelfth {
-  margin-top: 366px;
-  margin-left: 6100px;
-}
-
-#stack13{
-  margin-top: 416px;
-  margin-left: 6150px;
-}
-#stack14 {
-  margin-top: 416px;
-  margin-left: 6200px;
+#stage38 {
+  margin: 416px 0 0 6200px;
 }
 
-#stack15 {
-  margin-top: 416px;
-  margin-left: 6250px;
+#stage39 {
+  margin: 416px 0 0 6250px;
 }
 
-#stack16 {
-  margin-top: 416px;
-  margin-left: 6300px;
+#stage40 {
+  margin: 416px 0 0 6300px;
 }
 
-
-#stack17 {
-  margin-top: 416px;
-  margin-left: 6100px;
+#stage41 {
+  margin: 416px 0 0 6100px;
 }
 
-#stack18 {
-  margin-top: 416px;
-  margin-left: 5800px;
+#stage42 {
+  margin: 416px 0 0 5800px;
 }
-
-
 
-#floor3 {
-  margin-top: 416px;
-  margin-left: 7200px;
+#stage43 {
+  margin: 416px 0 0 7200px;
 }
 
-#floor4 {
-  margin-top: 416px;
-  margin-left: 7250px;
+#stage44 {
+  margin: 416px 0 0 7250px;
 }
 
-#floor5 {
-  margin-top: 416px;
-  margin-left: 7300px;
+#stage45 {
+  margin: 416px 0 0 7300px;
 }
 
-#floor6 {
-  margin-top: 416px;
-  margin-left: 7350px;
+#stage46 {
+  margin: 416px 0 0 7350px;
 }
 
-#stack21{
-  margin-top: 416px;
-  margin-left: 7400px;
+#stage47 {
+  margin: 416px 0 0 7400px;
 }
 
-#stack22{
-  margin-top: 416px;
-  margin-left: 7450px;
+#stage48 {
+  margin: 416px 0 0 7450px;
 }
 
-#stack21add{
-  margin-top: 416px;
-  margin-left: 7500px;
+#stage49 {
+  margin: 416px 0 0 7500px;
 }
 
-#stack22add{
-  margin-top: 416px;
-  margin-left: 7550px;
+#stage50 {
+  margin: 416px 0 0 7550px;
 }
 
-#stack23add{
-  margin-top: 416px;
-  margin-left: 7600px;
+#stage51 {
+  margin: 416px 0 0 7600px;
 }
 
-
-#fourteen{
-  margin-top: 366px;
-  margin-left: 7500px;
+#stage52 {
+  margin: 366px 0 0 7500px;
 }
 
-#fifteen{
-  margin-top: 366px;
-  margin-left: 7550px;
+#stage53 {
+  margin: 366px 0 0 7550px;
 }
 
-#fifteenadd{
-  margin-top: 366px;
-  margin-left: 7600px;
+#stage54 {
+  margin: 366px 0 0 7600px;
 }
 
-#floor7 {
-  margin-top: 366px;
-  margin-left: 7650px;
+#stage55 {
+  margin: 366px 0 0 7650px;
 }
 
-#floor8 {
-  margin-top: 366px;
-  margin-left: 7700px;
+#stage56 {
+  margin: 366px 0 0 7700px;
 }
 
-#floor9 {
-  margin-top: 366px;
-  margin-left: 7750px;
+#stage57 {
+  margin: 366px 0 0 7750px;
 }
 
-#floor10 {
-  margin-top: 366px;
-  margin-left: 7800px;
+#stage58 {
+  margin: 366px 0 0 7800px;
 }
 
-#stack23{
-  margin-top: 366px;
-  margin-left: 7850px;
+#stage59 {
+  margin: 366px 0 0 7850px;
 }
 
-#stack24{
-  margin-top: 366px;
-  margin-left: 7900px;
+#stage60 {
+  margin: 366px 0 0 7900px;
 }
 
-#stack25{
-  margin-top: 366px;
-  margin-left: 7950px;
+#stage61 {
+  margin: 366px 0 0 7950px;
 }
 
-#stack26{
-  margin-top: 366px;
-  margin-left: 8000px;
+#stage62 {
+  margin: 366px 0 0 8000px;
 }
 
-#stack27{
-  margin-top: 366px;
-  margin-left: 8050px;
+#stage63 {
+  margin: 366px 0 0 8050px;
 }
 
-#stack28{
-  margin-top: 366px;
-  margin-left: 8100px;
+#stage64 {
+  margin: 366px 0 0 8100px;
 }
 
-#stack29{
-  margin-top: 366px;
-  margin-left: 8150px;
+#stage65 {
+  margin: 366px 0 0 8150px;
 }
 
-#stack30{
-  margin-top: 366px;
-  margin-left: 8200px;
+#stage66 {
+  margin: 366px 0 0 8200px;
 }
 
-#stack31{
-  margin-top: 366px;
-  margin-left: 8250px;
+#stage67 {
+  margin: 366px 0 0 8250px;
 }
 
-#stack32{
-  margin-top: 366px;
-  margin-left: 8300px;
+#stage68 {
+  margin: 366px 0 0 8300px;
 }
 
-#stack33{
-  margin-top: 366px;
-  margin-left: 8350px;
+#stage69 {
+  margin: 366px 0 0 8350px;
 }
 
-#stack34{
-  margin-top: 366px;
-  margin-left: 8400px;
+#stage70 {
+  margin: 366px 0 0 8400px;
 }
 
-#sixteen{
-  margin-top: 316px;
-  margin-left: 8150px;
+#stage71 {
+  margin: 316px 0 0 8150px;
 }
 
-#seventeen{
-  margin-top: 316px;
-  margin-left: 8200px;
+#stage72 {
+  margin: 316px 0 0 8200px;
 }
 
-#stack35{
-  margin-top: 366px;
-  margin-left: 8450px;
+#stage73 {
+  margin: 366px 0 0 8450px;
 }
 
-#stack36{
-  margin-top: 366px;
-  margin-left: 8500px;
+#stage74 {
+  margin: 366px 0 0 8500px;
 }
 
-#stack37{
-  margin-top: 366px;
-  margin-left: 8550px;
+#stage75 {
+  margin: 366px 0 0 8550px;
 }
 
-#stack38{
-  margin-top: 366px;
-  margin-left: 8600px;
+#stage76 {
+  margin: 366px 0 0 8600px;
 }
 
-#stack39{
-  margin-top: 366px;
-  margin-left: 8650px;
+#stage77 {
+  margin: 366px 0 0 8650px;
 }
 
-#stack40{
-  margin-top: 366px;
-  margin-left: 8700px;
+#stage78 {
+  margin: 366px 0 0 8700px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen
   and (min-device-width: 768px)
