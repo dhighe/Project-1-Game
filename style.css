@@ -1,9 +1,6 @@
 html, body {
    overflow-y: hidden;
-}
-
-body{
-  width: 10000px;
+/*   overflow-x: hidden;*/
 }
 
 .block {
@@ -247,7 +244,7 @@ body{
   margin: 416px 0 0 5800px;
 }
 
-#stage43 {
+/*#stage43 {
   margin: 416px 0 0 7200px;
 }
 
@@ -390,7 +387,7 @@ body{
 #stage78 {
   margin: 366px 0 0 8700px;
 }
-
+*/
 @media only screen
   and (min-device-width: 768px)
   and (max-device-width: 1024px)

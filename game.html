@@ -1,98 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The Game!</title>
-    <!-- According to the style guide, "http:" should be ommitted, but if it is removed, jquery cannot be linked -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="controls.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-  <div class="play-area">
-    <div class="player"></div>
-    <div class="triangle" id="stage1"></div>
-    <div class="triangle" id="stage2" ></div>
-    <div class="triangle" id="stage3"></div>
-    <div class="triangle" id="stage4" ></div>
-    <div class="platform" id="stage5"></div>
-    <div class="triangle" id="stage6"></div>
-    <div class="triangle" id="stage7"></div>
-    <div class="platform" id="stage8"></div>
-    <div class="platform" id="stage9"></div>
-    <div class="platform" id="stage10"></div>
-    <div class="triangle" id="stage11"></div>
-    <div class="triangle" id="stage12"></div>
-    <div class="platform" id="stage13"></div>
-    <div class="platform" id="stage14"></div>
-    <div class="platform" id="stage15"></div>
-    <div class="triangle" id="stage16"></div>
-    <div class="triangle" id="stage17"></div>
-    <div class="triangle" id="stage18"></div>
-    <div class="triangle" id="stage19"></div>
-    <div class="triangle" id="stage20"></div>
-    <div class="triangle" id="stage21"></div>
-    <div class="triangle" id="stage22"></div>
-    <div class="block" id="stage23"></div>
-    <div class="block" id="stage24"></div>
-    <div class="block" id="stage25"></div>
-    <div class="block" id="stage26"></div>
-    <div class="platform" id="stage27"></div>
-    <div class="platform" id="stage28"></div>
-    <div class="platform" id="stage29"></div>
-    <div class="triangle" id="stage30"></div>
-    <div class="platform" id="stage31"></div>
-    <div class="platform" id="stage32"></div>
-    <div class="platform" id="stage33"></div>
-    <div class="triangle" id="stage34"></div>
-    <div class="platform" id="stage35"></div>
-    <div class="platform" id="stage36"></div>
-    <div class="platform" id="stage37"></div>
-    <div class="falling-block" id="stage38"></div>
-    <div class="platform" id="stage39"></div>
-    <div class="platform" id="stage40"></div>
-    <div class="platform" id="stage41"></div>
-    <div class="platform" id="stage42"></div>
-    <div class="block" id="stage43"></div>
-    <div class="block" id="stage44"></div>
-    <div class="block" id="stage45"></div>
-    <div class="block" id="stage46"></div>
-    <div class="platform" id="stage47"></div>
-    <div class="platform" id="stage48"></div>
-    <div class="platform" id="stage49"></div>
-    <div class="platform" id="stage50"></div>
-    <div class="platform" id="stage51"></div>
-    <div class="triangle" id="stage52"></div>
-    <div class="triangle" id="stage53"></div>
-    <div class="triangle" id="stage54"></div>
-    <div class="raised-block" id="stage55"></div>
-    <div class="raised-block" id="stage56"></div>
-    <div class="raised-block" id="stage57"></div>
-    <div class="raised-block" id="stage58"></div>
-    <div class="platform" id="stage59"></div>
-    <div class="platform" id="stage60"></div>
-    <div class="platform" id="stage61"></div>
-    <div class="platform" id="stage62"></div>
-    <div class="platform" id="stage63"></div>
-    <div class="platform" id="stage64"></div>
-    <div class="platform" id="stage65"></div>
-    <div class="platform" id="stage66"></div>
-    <div class="platform" id="stage67"></div>
-    <div class="platform" id="stage68"></div>
-    <div class="platform" id="stage69"></div>
-    <div class="platform" id="stage70"></div>
-    <div class="triangle" id="stage71"></div>
-    <div class="triangle" id="stage72"></div>
-    <div class="platform" id="stage73"></div>
-    <div class="platform" id="stage74"></div>
-    <div class="platform" id="stage75"></div>
-    <div class="platform" id="stage76"></div>
-    <div class="platform" id="stage77"></div>
-    <div class="falling-block" id="stage78"></div>
-  </div>
-  <div class="menu-area">
-    <h3>Press "Spacebar" to Jump</h3>
-  </div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Game!</title>
+  <!-- According to the style guide, "http:" should be ommitted, but if it is removed, jquery cannot be linked -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="controls.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="game-window">
+<div class="play-area">
+  <div class="player"></div>
+  <div class="triangle" id="stage1"></div>
+  <div class="triangle" id="stage2" ></div>
+  <div class="triangle" id="stage3"></div>
+  <div class="triangle" id="stage4" ></div>
+  <div class="platform" id="stage5"></div>
+  <div class="triangle" id="stage6"></div>
+  <div class="triangle" id="stage7"></div>
+  <div class="platform" id="stage8"></div>
+  <div class="platform" id="stage9"></div>
+  <div class="platform" id="stage10"></div>
+  <div class="triangle" id="stage11"></div>
+  <div class="triangle" id="stage12"></div>
+  <div class="platform" id="stage13"></div>
+  <div class="platform" id="stage14"></div>
+  <div class="platform" id="stage15"></div>
+  <div class="triangle" id="stage16"></div>
+  <div class="triangle" id="stage17"></div>
+  <div class="triangle" id="stage18"></div>
+  <div class="triangle" id="stage19"></div>
+  <div class="triangle" id="stage20"></div>
+  <div class="triangle" id="stage21"></div>
+  <div class="triangle" id="stage22"></div>
+  <div class="block" id="stage23"></div>
+  <div class="block" id="stage24"></div>
+  <div class="block" id="stage25"></div>
+  <div class="block" id="stage26"></div>
+  <div class="platform" id="stage27"></div>
+  <div class="platform" id="stage28"></div>
+  <div class="platform" id="stage29"></div>
+  <div class="triangle" id="stage30"></div>
+  <div class="platform" id="stage31"></div>
+  <div class="platform" id="stage32"></div>
+  <div class="platform" id="stage33"></div>
+  <div class="triangle" id="stage34"></div>
+  <div class="platform" id="stage35"></div>
+  <div class="platform" id="stage36"></div>
+  <div class="platform" id="stage37"></div>
+  <div class="falling-block" id="stage38"></div>
+  <div class="platform" id="stage39"></div>
+  <div class="platform" id="stage40"></div>
+  <div class="platform" id="stage41"></div>
+  <div class="platform" id="stage42"></div>
+ <!--  <div class="block" id="stage43"></div>
+  <div class="block" id="stage44"></div>
+  <div class="block" id="stage45"></div>
+  <div class="block" id="stage46"></div>
+  <div class="platform" id="stage47"></div>
+  <div class="platform" id="stage48"></div>
+  <div class="platform" id="stage49"></div>
+  <div class="platform" id="stage50"></div>
+  <div class="platform" id="stage51"></div>
+  <div class="triangle" id="stage52"></div>
+  <div class="triangle" id="stage53"></div>
+  <div class="triangle" id="stage54"></div>
+  <div class="raised-block" id="stage55"></div>
+  <div class="raised-block" id="stage56"></div>
+  <div class="raised-block" id="stage57"></div>
+  <div class="raised-block" id="stage58"></div>
+  <div class="platform" id="stage59"></div>
+  <div class="platform" id="stage60"></div>
+  <div class="platform" id="stage61"></div>
+  <div class="platform" id="stage62"></div>
+  <div class="platform" id="stage63"></div>
+  <div class="platform" id="stage64"></div>
+  <div class="platform" id="stage65"></div>
+  <div class="platform" id="stage66"></div>
+  <div class="platform" id="stage67"></div>
+  <div class="platform" id="stage68"></div>
+  <div class="platform" id="stage69"></div>
+  <div class="platform" id="stage70"></div>
+  <div class="triangle" id="stage71"></div>
+  <div class="triangle" id="stage72"></div>
+  <div class="platform" id="stage73"></div>
+  <div class="platform" id="stage74"></div>
+  <div class="platform" id="stage75"></div>
+  <div class="platform" id="stage76"></div>
+  <div class="platform" id="stage77"></div>
+  <div class="falling-block" id="stage78"></div> -->
+</div>
+<div class="menu-area">
+  <h3>Press "Spacebar" to Jump</h3>
+</div>
+</div>
+</body>
 </html>

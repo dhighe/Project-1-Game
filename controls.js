@@ -32,29 +32,29 @@ function hitBox(){
   })
 }
 
-function raisedBox(){
-  var playerLeft = $('.player').offset().left;
-  var playerRight = $('.player').offset().left + $('.player').width();
-  var playerTop = $('.player').offset().top;
-  var playerBottom = $('.player').offset().top + $('.player').height();
-  $('.raised-block').each(function(){
-    var rblockLeft = $(this).offset().left;
-    var rblockRight = $(this).offset().left + $(this).width();
-    var rblockTop = $(this).offset().top;
-    var rblockTopS = $(this).offset().top + 10;
-    var rblockTopN = $(this).offset().top - 10;
-    var rblockBottom = $(this).offset().top + $(this).height();
-  //Killzone are on blocks side but safe on top
-    if (playerRight > rblockLeft && playerLeft < rblockRight && playerBottom > rblockTop){
-      console.log('Hit!');
-    } else if (playerRight > rblockLeft && playerLeft < rblockRight && rblockTopS > playerBottom && playerBottom > rblockTopN){
-      console.log('Land!');
-  //Allows the player to stop on the block and the new ground is at same level as the block
-      $('.player').stop();
-      $(".player").css('top', "-100px");
-    }
-  })
-}
+// function raisedBox(){
+//   var playerLeft = $('.player').offset().left;
+//   var playerRight = $('.player').offset().left + $('.player').width();
+//   var playerTop = $('.player').offset().top;
+//   var playerBottom = $('.player').offset().top + $('.player').height();
+//   $('.raised-block').each(function(){
+//     var rblockLeft = $(this).offset().left;
+//     var rblockRight = $(this).offset().left + $(this).width();
+//     var rblockTop = $(this).offset().top;
+//     var rblockTopS = $(this).offset().top + 10;
+//     var rblockTopN = $(this).offset().top - 10;
+//     var rblockBottom = $(this).offset().top + $(this).height();
+//   //Killzone are on blocks side but safe on top
+//     if (playerRight > rblockLeft && playerLeft < rblockRight && playerBottom > rblockTop){
+//       console.log('Hit!');
+//     } else if (playerRight > rblockLeft && playerLeft < rblockRight && rblockTopS > playerBottom && playerBottom > rblockTopN){
+//       console.log('Land!');
+//   //Allows the player to stop on the block and the new ground is at same level as the block
+//       $('.player').stop();
+//       $(".player").css('top', "-100px");
+//     }
+//   })
+// }
 
 //There are a difference between walls/platforms, and blocks. Blocks are meant to be jumped off
 function hitWall(){
@@ -70,7 +70,7 @@ function hitWall(){
 
     if (playerRight > platLeft  && playerLeft < platRight && playerBottom > platTop){
       console.log('Hit!');
-      // location.reload(true);
+      location.reload(true);
     }
   });
 }
@@ -89,7 +89,7 @@ function hitHazzard(){
 
     if (playerRight > triangleLeft  && playerLeft < triangleRight && playerBottom > triangleTop){
       console.log('Hit!');
-      // location.reload(true);
+      location.reload(true);
     }
   });
 }
@@ -129,7 +129,7 @@ function movingBlock() {
   var movright =  $(".block").position().left;
   var boundaryLeft = -10000;
     $('.block').animate({left: '-=10000'},{duration: 22000});
-    hitbox();
+    hitBox();
     if (movright < boundaryLeft){
       $(this).remove();
     }
@@ -141,31 +141,31 @@ function fallingBlock() {
   var movright =  $(".falling-block").position().left;
   var boundaryLeft = -10000;
     $('.falling-block').animate({left: '-=10000'},{duration: 22000});
-    hitbox();
+    hitBox();
     if (movright < boundaryLeft){
       $(this).remove();
     }
   });
 }
 
-function higherBlock() {
-  $(".raised-block").each(function() {
-  var movright =  $(".raised-block").position().left;
-  var boundaryLeft = -10000;
-    $('.raised-block').animate({left: '-=10000'},{duration: 22000});
-    hitbox();
-    if (movright < boundaryLeft){
-      $(this).remove();
-    }
-  });
-}
+// function higherBlock() {
+//   $(".raised-block").each(function() {
+//   var movright =  $(".raised-block").position().left;
+//   var boundaryLeft = -10000;
+//     $('.raised-block').animate({left: '-=10000'},{duration: 22000});
+//     hitBox();
+//     if (movright < boundaryLeft){
+//       $(this).remove();
+//     }
+//   });
+// }
 
 function platform() {
   $(".platform").each(function() {
     var movright =  $(".platform").position().left;
     var boundaryLeft = -1000;
     $('.platform').animate({left: '-=10000'},{duration: 22000});
-    hitbox();
+    hitBox();
     if (movright < boundaryLeft){
       $(this).remove();
     }
@@ -177,7 +177,7 @@ function dodgeThis() {
     var movright =  $(".triangle").position().left;
     var boundaryLeft = -1000;
     $('.triangle').animate({left: '-=10000'},{duration: 22000});
-    hitbox();
+    hitBox();
     if (movright < boundaryLeft){
       $(this).remove();
     }
@@ -188,18 +188,18 @@ function winner() {
   alert('Congratulations!');
 }
 
-// setInterval(movingBlock, 1000);
-// setInterval(platform, 1000);
-// setInterval(dodgeThis, 1000);
-// setInterval(fallingBlock, 1000);
-// setInterval(higherBlock, 1000);
+setInterval(movingBlock, 1000);
+setInterval(platform, 1000);
+setInterval(dodgeThis, 1000);
+setInterval(fallingBlock, 1000);
+//setInterval(higherBlock, 1000);
 
-// setInterval(hitBox, 1);
-// setInterval(raisedBox, 1);
-// setInterval(fallbox, 100);
-// setInterval(hitHazzard, 100);
-// setInterval(hitWall, 100);
-// setTimeout(winner, 18000);
+setInterval(hitBox, 1);
+//setInterval(raisedBox, 1);
+setInterval(fallbox, 100);
+setInterval(hitHazzard, 100);
+setInterval(hitWall, 100);
+setTimeout(winner, 18000);
 
 
 
