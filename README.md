@@ -22,7 +22,7 @@ The website recreated for this project:
 http://impossiblegame.org/pixi-dash/
 
 My Rendition:
-(https://cloud.githubusercontent.com/assets/20092541/19258669/f4fc604e-8f47-11e6-8eba-20cd6c56f83d.png)
+![screen shot 2016-10-10 at 9 36 58 pm](https://cloud.githubusercontent.com/assets/20092541/19258728/d174748a-8f48-11e6-9afa-5b53e346ace6.png)
 
 Wireframe: 
 (https://cloud.githubusercontent.com/assets/20092541/19258686/246e3f64-8f48-11e6-988d-634e5457f64d.png)
