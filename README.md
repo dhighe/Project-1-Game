@@ -25,7 +25,7 @@ My Rendition:
 ![screen shot 2016-10-10 at 9 36 58 pm](https://cloud.githubusercontent.com/assets/20092541/19258728/d174748a-8f48-11e6-9afa-5b53e346ace6.png)
 
 Wireframe: 
-![screen shot 2016-10-10 at 9 22 02 pm](https://cloud.githubusercontent.com/assets/20092541/19258742/f08b2800-8f48-11e6-9254-61f206b22b2f.png)
+![screen shot 2016-10-10 at 9 22 50 pm](https://cloud.githubusercontent.com/assets/20092541/19258750/0c8157b4-8f49-11e6-9aed-0adc5fe967bd.png)
 
 
 Original Scope: 
