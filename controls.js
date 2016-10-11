@@ -82,6 +82,7 @@ function hitHazzard(){
   var playerTop = $('.player').offset().top;
   var playerBottom = $('.player').offset().top + $('.player').height();
   $('.triangle').each(function(){
+    // Sides are made a bit smaller because collision is based off a square
     var triangleLeft = $(this).offset().left ;
     var triangleRight = $(this).offset().left + 40;
     var triangleTop = $(this).offset().top;
@@ -93,6 +94,8 @@ function hitHazzard(){
     }
   });
 }
+setInterval(hitHazzard, 10);
+
 
 //Unfortunately I was unable to come up with a good way to make physics actually work in JS, so I added this
 function fallbox(){
@@ -111,14 +114,14 @@ function fallbox(){
 $(document).ready(function jumping(){
   $('body').keydown(function(event) {
     if (event.keyCode === 32 && inAir === false) {
-      $('.player').animate({top: '-=120'},{duration: 450});
+      $('.player').animate({top: '-=110'},{duration: 450});
       }
     inAir = true;
 // function needs to be altered to prevent holding down space to stay in air
   });
   $('body').keyup(function(event) {
       if(event.keyCode === 32 && inAir === true) {
-      $('.player').animate({top: '+=120'},{duration: 450});
+      $('.player').animate({top: '+=110'},{duration: 450});
     }
     inAir = false;
   });
