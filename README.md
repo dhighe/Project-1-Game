@@ -21,3 +21,29 @@ This Project was done as an assignment at General Assembly, with the following r
 The website recreated for this project: 
 http://impossiblegame.org/pixi-dash/
 
+My Rendition:
+(https://cloud.githubusercontent.com/assets/20092541/19258669/f4fc604e-8f47-11e6-8eba-20cd6c56f83d.png)
+
+Wireframe: 
+(https://cloud.githubusercontent.com/assets/20092541/19258686/246e3f64-8f48-11e6-988d-634e5457f64d.png)
+
+Original Scope: 
+
+	Description: The main objective of the game is get to the finish line at the end while jumping over hazards and on platforms. Player and platforms are squares while triangles are main hazards. Hitting the side of a platform is a game over. Hitting the top of a triangle is game over. Easy right?
+
+	Technology: HTML and CSS to style to stage, player, and hazards. Jquery to control the movement of the stage, the players jump, and the collision between the objects.
+
+	Stretch Goals: Either Two levels or two difficulty settings, Normal and Hard
+	
+What was left unfinished, and will be worked on in the future: 
+
+	An Additional stage, with more platforming, and a bit higher difficulty. 
+
+	Scoring. Tracking the number of attempts per stage.
+
+	Styling the game into the format of the landing page.
+	Background music 
+
+	More responsive controls. At the moment the jumps feel too floaty. 
+
+	Perhaps a different implementation of collision, outside the limitations of the project.
