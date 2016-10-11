@@ -48,3 +48,5 @@ What was left unfinished, and will be worked on in the future:
 	More responsive controls. At the moment the jumps feel too floaty. 
 
 	Perhaps a different implementation of collision, outside the limitations of the project.
+	
+https://dhighe.github.io/Project-1-Game/
