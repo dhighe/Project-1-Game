@@ -12,6 +12,7 @@ function hitBox(){
   var playerRight = $('.player').offset().left + $('.player').width();
   var playerTop = $('.player').offset().top;
   var playerBottom = $('.player').offset().top + $('.player').height();
+  // Documentation for .each was found at http://www.w3schools.com/jquery/misc_each.asp
   $('.block').each(function(){
     var blockLeft = $(this).offset().left;
     var blockRight = $(this).offset().left + $(this).width();
@@ -21,6 +22,7 @@ function hitBox(){
     var blockTopN = $(this).offset().top - 10;
     var blockBottom = $(this).offset().top + $(this).height();
   //Killzone are on blocks side but safe on top
+  // Basic collision detection https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
     if (playerRight > blockLeft && playerLeft < blockRight && playerBottom > blockTop){
       console.log('Hit!');
     } else if (playerRight > blockLeft && playerLeft < blockRight && blockTopS > playerBottom && playerBottom > blockTopN){
@@ -94,7 +96,6 @@ function hitHazzard(){
     }
   });
 }
-setInterval(hitHazzard, 10);
 
 
 //Unfortunately I was unable to come up with a good way to make physics actually work in JS, so I added this
@@ -149,7 +150,6 @@ function fallingBlock() {
 //   var movright =  $(".raised-block").position().left;
 //   var boundaryLeft = -10000;
 //     $('.raised-block').animate({left: '-=10000'},{duration: 22000});
-//     }
 //   });
 // }
 
